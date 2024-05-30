@@ -1,0 +1,88 @@
+create table visitor(
+vID char(9)not null  ,
+vName varchar2(30) NOT NULL,
+vPassword varchar2(30)not null,
+BDate Date not null,
+Address varchar2(30) NOT NULL ,
+PhoneNumber char(10) unique ,
+primary Key(vID));
+insert into visitor values ('1111','HALA JABE','12345','1-Aug-1991','Nablus', '059987654' );
+insert into visitor values ('1521','AYA AWAD','56789','29-Mar-1999','Tulkarm', '059887653' );
+insert into visitor values ('1131','Saja Jamous','12355','1-Aug-1991','Nablus', '059987754' );
+
+create table MOVES(
+MOVESID char(9)not null ,
+pName varchar2(30) NOT NULL,
+TYPE_MOVE varchar2(30)NOT NULL,
+YEAR_RELEASED Date not null,
+RATING INT not null,
+ACTOR varchar2(30) NOT NULL,
+primary Key(MOVESID));
+insert into  MOVES values ('0000','PINCCHIO','COMIDYA','11-June-2000','10', 'AHMAD HELM' );
+insert into  MOVES values ('9999','THE END','HORROR','7-Jan-2002','5','DANIELE');
+insert into  MOVES values ('0008','SHE SAID','DRAMA','16-Feb-2000','10','TOM');
+
+
+create table MOVE_Visiter(
+MOVESID char(9)not null  ,
+vID char(9)not null  ,
+PRIMARY KEY (MOVESID, vID) ,
+Foreign Key (MOVESID)references MOVES (MOVESID),
+Foreign Key (vID)references visitor(vID));
+insert into move_visiter values ('9999','1521','4');
+insert into  move_visiter values ('0008','1131','7');
+
+
+
+create table Employee(
+eName varchar2(30) NOT NULL,
+Gmail varchar2(100) unique ,
+ePassword varchar2(30)not null,
+SSN char(9)not null  ,
+PhoneNumber char(10) unique ,
+eGender varchar2(1)NOT NULL,
+BDate Date not null,
+Address varchar2(30)not null,
+primary Key(SSN));
+insert into Employee values ('Masa Issa','masaissa@gmail.com','55555','106','059812345','F','9-June-2001','Tulkarm');
+insert into Employee values ('Sojod','sojod@gmail.com','66666','119','0597183010','F','11-July-2001','Nablus');
+
+
+
+create table visit_TO_CINM(
+CINM_Name varchar2(20) NOT NULL,
+visitID char(9)not null,
+Address varchar2(30)not null,
+SSN char(9)not null,  
+primary Key(visitID),
+Foreign Key (SSN)references Employee(SSN));
+insert into visit_TO_CINM values ('AL-WALEED','10','RAMALL','106');
+insert into visit_TO_CINM values ('AL-ANDALS','8','Tulkarm','119');
+	 
+
+
+create table visit_MOVE(
+MOVESID char(9)not null  ,
+visitID char(9)not null  ,
+PRIMARY KEY (MOVESID, visitID) ,
+Foreign Key (MOVESID)references MOVES(MOVESID),
+Foreign Key (visitID)references visit_TO_CINM(visitID));
+insert into visit_MOVE values ('0000','10');
+insert into visit_MOVE values ('9999','8');
+
+
+create table visitVisitor(
+vID char(9)not null  ,
+visitID char(9)not null ,
+PRIMARY KEY (visitID, vID),
+Foreign Key (vID)references visitor(vID),
+Foreign Key (visitID)references visit_TO_CINM (visitID)); 
+insert into visitVisitor values ('1111','10');
+insert into visitVisitor values ('1521','8');
+        
+
+ALTER TABLE MOVE_VISITER
+ADD SALARY INT  ;
+
+
+

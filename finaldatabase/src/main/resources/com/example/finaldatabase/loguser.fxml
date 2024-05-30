@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="500.0" prefWidth="857.0" style="-fx-background-color: #646970;" stylesheets="@button/login.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.finaldatabase.loguser">
+    <children>
+        <ImageView fx:id="user" fitHeight="500.0" fitWidth="442.0" pickOnBounds="true" AnchorPane.rightAnchor="508.0">
+            <image>
+                <Image url="@images/two.jpg" />
+            </image>
+        </ImageView>
+        <Button fx:id="goin" layoutX="354.0" layoutY="364.0" mnemonicParsing="false" onAction="#go" prefHeight="32.0" prefWidth="176.0" styleClass="login" stylesheets="@button/login.css" text="sign in" />
+      <Pane layoutX="166.0" layoutY="150.0" opacity="0.5" prefHeight="200.0" prefWidth="529.0" style="-fx-background-color: #2c3338; -fx-border-radius: 25;">
+         <children>
+                  <Label layoutX="14.0" layoutY="22.0" prefHeight="57.0" prefWidth="211.0" text=" ID Number" textAlignment="RIGHT" textFill="#fffefe">
+                      <font>
+                          <Font name="Aldhabi" size="36.0" />
+                      </font>
+                      <effect>
+                          <Glow />
+                      </effect>
+                  </Label>
+                  <Label layoutX="14.0" layoutY="90.0" prefHeight="84.0" prefWidth="253.0" text="The password" textFill="#fcfcfc">
+                      <font>
+                                      <Font name="Aldhabi" size="36.0" />
+                      </font>
+                      <effect>
+                          <Glow />
+                      </effect>
+                  </Label>
+                  <TextField fx:id="email" layoutX="250.0" layoutY="38.0" prefHeight="47.0" prefWidth="244.0" style="-fx-background-color: #f6f7f7; -fx-background-radius: 25;">
+                      <effect>
+                          <DropShadow />
+                      </effect>
+                  </TextField>
+                    <PasswordField fx:id="pass" layoutX="250.0" layoutY="104.0" prefHeight="47.0" prefWidth="244.0" style="-fx-background-radius: 25;" />
+         </children>
+      </Pane>
+      <Button fx:id="creatt" layoutX="354.0" layoutY="429.0" mnemonicParsing="false" onAction="#creat" prefHeight="47.0" prefWidth="176.0" styleClass="login" stylesheets="@button/login.css" text="create account " />
+      <JFXButton fx:id="back" layoutX="855.0" layoutY="431.0" mnemonicParsing="false" onAction="#back1" text=".">
+         <graphic>
+            <ImageView fitHeight="36.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/back.gif.png" />
+               </image>
+            </ImageView>
+         </graphic></JFXButton>
+    </children>
+</AnchorPane>

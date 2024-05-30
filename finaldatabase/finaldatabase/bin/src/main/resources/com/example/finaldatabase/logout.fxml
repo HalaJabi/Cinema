@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="441.0" prefWidth="681.0" style="-fx-background-color: #646970;" stylesheets="@button/login.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.finaldatabase.logout">
+   <children>
+      <ImageView fitHeight="441.0" fitWidth="688.0" layoutX="-3.0" pickOnBounds="true">
+         <image>
+            <Image url="@images/thrrrr.jpg" />
+         </image>
+      </ImageView>
+      <Button layoutX="278.0" layoutY="330.0" mnemonicParsing="false" onAction="#back" prefHeight="25.0" prefWidth="147.0" text="Welcom Back ">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="278.0" layoutY="380.0" mnemonicParsing="false" onAction="#js" prefHeight="30.0" prefWidth="147.0" text="Genrate reporte" textFill="#282727">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

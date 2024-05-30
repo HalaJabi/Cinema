@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="643.0" prefWidth="945.0" stylesheets="@button/login.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.finaldatabase.createadmin">
+    <children>
+        <Pane prefHeight="643.0" prefWidth="946.0" style="-fx-background-color: gray;">
+            <children>
+                <ImageView fitHeight="1.0" fitWidth="73.0" layoutX="228.0" layoutY="-44.0" pickOnBounds="true" preserveRatio="true" />
+                <Label layoutX="523.0" layoutY="35.0" prefHeight="35.0" prefWidth="241.0" text="create new account " textFill="#ebe1e1">
+                    <font>
+                        <Font name="System Bold Italic" size="24.0" />
+                    </font></Label>
+                <Label layoutX="539.0" layoutY="125.0" text="ID" textFill="#f4f0f0">
+                    <font>
+                        <Font name="System Bold" size="18.0" />
+                    </font>
+                </Label>
+                <Label layoutX="501.0" layoutY="186.0" prefHeight="25.0" prefWidth="62.0" text="Name" textFill="#ecebeb">
+                    <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                    </font>
+                </Label>
+                <Label layoutX="457.0" layoutY="243.0" text="Birth Date" textFill="#f4f2f2">
+                    <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                    </font>
+                </Label>
+                <Label layoutX="413.0" layoutY="296.0" prefHeight="27.0" prefWidth="133.0" text="Phone Number" textFill="#efecec">
+                    <font>
+                        <Font name="System Bold" size="18.0" />
+                    </font>
+                </Label>
+                <Label layoutX="485.0" layoutY="347.0" prefHeight="27.0" prefWidth="74.0" text="address" textFill="#eae7e7">
+                    <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="id" layoutX="576.0" layoutY="126.0" prefHeight="25.0" prefWidth="283.0" />
+                <TextField fx:id="name" layoutX="576.0" layoutY="187.0" prefHeight="25.0" prefWidth="283.0" />
+                <TextField fx:id="date" layoutX="576.0" layoutY="244.0" prefHeight="25.0" prefWidth="283.0" />
+                <TextField fx:id="number" layoutX="576.0" layoutY="297.0" prefHeight="25.0" prefWidth="283.0" />
+                <ImageView fitHeight="643.0" fitWidth="395.0" layoutY="-2.0" opacity="0.45" pickOnBounds="true">
+                    <image>
+                        <Image url="@images/jab.jpg" />
+                    </image>
+                </ImageView>
+                <Button id="sale" fx:id="b1" layoutX="644.0" layoutY="572.0" mnemonicParsing="false" onAction="#create" prefHeight="47.0" prefWidth="116.0" styleClass="login" stylesheets="@button/login.css" text="create " textFill="#f5eded">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font></Button>
+                <TextField fx:id="add" layoutX="576.0" layoutY="348.0" prefHeight="25.0" prefWidth="283.0" />
+                <ImageView fitHeight="74.0" fitWidth="86.0" layoutX="442.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@images/add-contact.png" />
+                    </image>
+                </ImageView>
+                <PasswordField fx:id="pass" layoutX="576.0" layoutY="452.0" prefHeight="25.0" prefWidth="283.0" />
+                <Label layoutX="454.0" layoutY="456.0" prefHeight="27.0" prefWidth="94.0" text="Password" textFill="#e8e0e0">
+                    <font>
+                        <Font name="System Bold" size="18.0" />
+                    </font>
+                </Label>
+                <JFXButton layoutX="835.0" layoutY="562.0" mnemonicParsing="false" onAction="#back" prefHeight="67.0" prefWidth="87.0" text=".">
+                    <graphic>
+                        <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@images/back.gif.png" />
+                            </image>
+                        </ImageView>
+                    </graphic></JFXButton>
+            <Label layoutX="479.0" layoutY="399.0" prefHeight="27.0" prefWidth="62.0" text="Gimal" textFill="#fff9f9">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="gmail" layoutX="576.0" layoutY="400.0" prefHeight="25.0" prefWidth="283.0" />
+            <Label layoutX="480.0" layoutY="516.0" text="Gender" textFill="#ebe7e7">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="gender" layoutX="572.0" layoutY="517.0" prefHeight="25.0" prefWidth="283.0" />
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>

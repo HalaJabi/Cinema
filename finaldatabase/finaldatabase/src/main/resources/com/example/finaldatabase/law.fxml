@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="500.0" prefWidth="900.0" style="-fx-background-color: #8c8f94;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.finaldatabase.law">
+    <children>
+        <ImageView fitHeight="532.0" fitWidth="900.0" opacity="0.35" pickOnBounds="true">
+         <image>
+            <Image url="@images/R.gif" />
+         </image></ImageView>
+        <Label layoutX="397.0" layoutY="28.0" prefHeight="69.0" prefWidth="107.0" text="Laws">
+            <font>
+                <Font name="Aldhabi" size="47.0" />
+            </font>
+        </Label>
+        <HBox layoutX="100.0" layoutY="110.0" opacity="0.7" prefHeight="94.0" prefWidth="680.0" style="-fx-background-color: #691c1c; -fx-background-radius: 25;">
+         <children>
+            <ImageView fitHeight="97.0" fitWidth="97.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/no-phone.png" />
+               </image>
+            </ImageView>
+                <Text fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="DO NOT USE YOUR MOBILPHONE" textAlignment="CENTER" wrappingWidth="646.6708984375">
+                    <font>
+                        <Font name="Aldhabi" size="34.0" />
+                    </font>
+                </Text>
+         </children></HBox>
+        <HBox layoutX="100.0" layoutY="231.0" opacity="0.7" prefHeight="86.0" prefWidth="680.0" style="-fx-background-color: #691c1c; -fx-background-radius: 25;">
+            <children>
+            <ImageView fitHeight="89.0" fitWidth="104.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/no-talk.png" />
+               </image>
+            </ImageView>
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="DO VOT TALK DURING MOVIE" textAlignment="CENTER" wrappingWidth="646.6708984375">
+                    <font>
+                        <Font name="Aldhabi" size="34.0" />
+                    </font>
+                </Text>
+            </children>
+        </HBox>
+        <HBox layoutX="102.0" layoutY="338.0" opacity="0.7" prefHeight="86.0" prefWidth="680.0" style="-fx-background-color: #691c1c; -fx-background-radius: 25;">
+            <children>
+            <ImageView fitHeight="89.0" fitWidth="91.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/popcorn.png" />
+               </image>
+            </ImageView>
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="EAT AND DRINK QUIETLY" textAlignment="CENTER" wrappingWidth="646.6708984375">
+                    <font>
+                        <Font name="Aldhabi" size="34.0" />
+                    </font>
+                </Text>
+            </children>
+        </HBox>
+      <JFXButton layoutX="807.0" layoutY="489.0" mnemonicParsing="false" onAction="#back" text=".">
+         <graphic>
+            <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/back.gif.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+    </children>
+</AnchorPane>

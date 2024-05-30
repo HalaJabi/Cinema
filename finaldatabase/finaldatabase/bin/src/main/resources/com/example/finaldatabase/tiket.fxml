@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="659.0" prefWidth="905.0" style="-fx-background-color: #646970;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.finaldatabase.Tiket">
+   <children>
+      <ImageView fitHeight="669.0" fitWidth="945.0" layoutX="-16.0" layoutY="-12.0" opacity="0.25" pickOnBounds="true">
+         <image>
+            <Image url="@images/ha.jpg" />
+         </image>
+      </ImageView>
+      <TextArea layoutX="31.0" layoutY="84.0" prefHeight="257.0" prefWidth="257.0" text="Name of Movie:  Lou&#10;&#10;&#10;Time: 4:00-6:00 am&#10;&#10;Pirce : 60 NIS&#10;&#10;&#10;Note:  can you see the trailler and&#10;all infrmation of the move &#10;in Page Movies.">
+         <font>
+            <Font size="14.0" />
+         </font></TextArea>
+      <TextArea layoutX="343.0" layoutY="84.0" prefHeight="257.0" prefWidth="257.0" text="Name of Movie : The Nun&#10;&#10;&#10;Time : 9:00-11:30 am&#10;&#10; Pirce : 70 NIS&#10;&#10;Note:  can you see the trailler and&#10;all infrmation of the move &#10;in Page Movies&#10;">
+         <font>
+            <Font size="14.0" />
+         </font></TextArea>
+      <TextArea layoutX="648.0" layoutY="84.0" prefHeight="257.0" prefWidth="264.0" text="Name of Movie : The Raniy Day&#10;&#10;&#10;Time : 8:00-10:00 am&#10;&#10;Pirce : 110 NIS&#10;&#10;Note:  can you see the trailler &#10;and all infrmation of the move &#10;in Page Movies &#10;&#10;&#10;">
+         <font>
+            <Font size="14.0" />
+         </font></TextArea>
+      <CheckBox fx:id="T1" layoutX="110.0" layoutY="384.0" mnemonicParsing="false" onAction="#T11" text="Ticket 1: " textFill="#f5efef">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="T2" layoutX="402.0" layoutY="378.0" mnemonicParsing="false" onAction="#T22" text="Ticket 2:" textFill="#eeebeb">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="T3" layoutX="690.0" layoutY="378.0" mnemonicParsing="false" onAction="#T33" text="Ticket 3:" textFill="#f5f2f2">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </CheckBox>
+      <Button layoutX="362.0" layoutY="513.0" mnemonicParsing="false" onAction="#BUY" prefHeight="60.0" prefWidth="173.0" style="-fx-background-color: #8a2424;" text="Buy the ticket" textFill="#ebe5e5">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <JFXButton layoutX="826.0" layoutY="597.0" mnemonicParsing="false" onAction="#back" text=".">
+         <graphic>
+            <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/back.gif.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      
+   </children>
+</AnchorPane>

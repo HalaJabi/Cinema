@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="509.0" prefWidth="988.0" style="-fx-background-color: #8c8f94;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.finaldatabase.addmin">
+    <children>
+        <BorderPane prefHeight="509.0" prefWidth="989.0">
+            <top>
+                <AnchorPane prefHeight="63.0" prefWidth="989.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+                    <children>
+                        <Pane layoutX="295.0" layoutY="4.0" prefHeight="25.0" prefWidth="200.0" style="-fx-background-color: #451313;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                        <Label fx:id="menu" layoutX="39.0" layoutY="32.0" text="Menu" textFill="#e33410">
+                            <font>
+                                <Font name="Arial Bold Italic" size="24.0" />
+                            </font>
+                            <graphic>
+                                <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@images/menu.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                        </Label>
+                    </children>
+                </AnchorPane>
+            </top>
+            <left>
+                <AnchorPane fx:id="slider" prefHeight="362.0" prefWidth="176.0" style="-fx-background-color: #451313;" BorderPane.alignment="CENTER">
+                    <children>
+                        <VBox layoutX="46.0" layoutY="68.0" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #451313;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="53.0">
+                            <children>
+                                <JFXButton mnemonicParsing="false" onAction="#add" prefHeight="38.0" prefWidth="176.0" stylesheets="@css/css/controls/jfx-button.css" text="Add New Move" textFill="#f2ebeb">
+                                    <font>
+                                        <Font name="System Bold Italic" size="14.0" />
+                                    </font>
+                                    <graphic>
+                                        <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@images/movie-frame.png" />
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                </JFXButton>
+                                <JFXButton mnemonicParsing="false" onAction="#update" prefHeight="38.0" prefWidth="176.0" stylesheets="@css/css/controls/jfx-button.css" text="Update Move" textFill="#f5efef">
+                                    <font>
+                                        <Font name="System Bold Italic" size="14.0" />
+                                    </font>
+                                    <graphic>
+                                        <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@images/update.png" />
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                </JFXButton>
+                                <JFXButton mnemonicParsing="false" onAction="#delete" prefHeight="38.0" prefWidth="176.0" stylesheets="@css/css/controls/jfx-button.css" text="Delete Move" textFill="#f5f3f3">
+                                    <font>
+                                        <Font name="System Bold Italic" size="14.0" />
+                                    </font>
+                                    <graphic>
+                                        <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@images/trash.png" />
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                </JFXButton>
+                                <JFXButton mnemonicParsing="false" onAction="#out" prefHeight="38.0" prefWidth="176.0" stylesheets="@css/css/controls/jfx-button.css" text="Log Out" textFill="#ebe5e5">
+                                    <font>
+                                        <Font name="System Bold" size="14.0" />
+                                    </font>
+                                    <graphic>
+                                        <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@images/halalog.png" />
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                </JFXButton>
+                            </children></VBox>
+                    </children>
+                </AnchorPane>
+            </left>
+            <center>
+                <ImageView fitHeight="438.0" fitWidth="812.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                    <image>
+                        <Image url="@images/sale.jpg" />
+                    </image>
+                </ImageView>
+            </center>
+         <right>
+            <JFXButton mnemonicParsing="false" onAction="#back" text="." BorderPane.alignment="CENTER">
+               <graphic>
+                  <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/back.gif.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+         </right>
+        </BorderPane>
+    </children>
+
+</AnchorPane>

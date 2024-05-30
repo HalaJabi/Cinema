@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="510.0" prefWidth="900.0" style="-fx-background-color: #691c1c;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.finaldatabase.Cinma">
+    <children>
+      <ImageView fitHeight="510.0" fitWidth="900.0" opacity="0.34" pickOnBounds="true">
+         <image>
+            <Image url="@images/three.jpg" />
+         </image>
+      </ImageView>
+        <HBox layoutX="188.0" layoutY="25.0" prefHeight="369.0" prefWidth="518.0">
+            <children>
+                <TableView fx:id="table" prefHeight="369.0" prefWidth="517.0">
+                    <columns>
+                        <TableColumn fx:id="Tname" prefWidth="105.0" text="Cinma_Name" />
+                        <TableColumn fx:id="TID" minWidth="0.0" prefWidth="160.0" text="Cinma_ID" />
+                        <TableColumn fx:id="Tadd" prefWidth="124.0" text="Address" />
+                        <TableColumn fx:id="Tssn" prefWidth="127.0" text="SSN" />
+                    </columns>
+                </TableView>
+            </children>
+        </HBox>
+        <Button fx:id="search" layoutX="674.0" layoutY="430.0" mnemonicParsing="false" onAction="#sarch1" text="Research" />
+        <TextField fx:id="idd" layoutX="290.0" layoutY="430.0" prefHeight="25.0" prefWidth="283.0" />
+      <JFXButton layoutX="811.0" layoutY="428.0" mnemonicParsing="false" onAction="#BACK" prefHeight="52.0" prefWidth="52.0" text=".">
+         <graphic>
+            <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/back.gif.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+    </children>
+</AnchorPane>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="643.0" prefWidth="945.0" stylesheets="@button/login.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.finaldatabase.addmove">
+    <children>
+        <Pane layoutX="1.0" layoutY="1.0" prefHeight="643.0" prefWidth="945.0" style="-fx-background-color: gray;">
+            <children>
+                <ImageView fitHeight="1.0" fitWidth="73.0" layoutX="228.0" layoutY="-44.0" pickOnBounds="true" preserveRatio="true" />
+                <Label layoutX="523.0" layoutY="35.0" prefHeight="35.0" prefWidth="241.0" text="New Movie" textFill="#ebe1e1">
+                    <font>
+                        <Font name="System Bold Italic" size="24.0" />
+                    </font></Label>
+                <Label layoutX="549.0" layoutY="129.0" text="ID" textFill="#f4f0f0">
+                    <font>
+                        <Font name="System Bold" size="18.0" />
+                    </font>
+                </Label>
+                <Label layoutX="501.0" layoutY="186.0" prefHeight="25.0" prefWidth="62.0" text="Name" textFill="#ecebeb">
+                    <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                    </font>
+                </Label>
+                <Label layoutX="479.0" layoutY="243.0" text="Type" textFill="#f4f2f2">
+                    <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                    </font>
+                </Label>
+                <Label layoutX="434.0" layoutY="300.0" prefHeight="27.0" prefWidth="133.0" text="Year released" textFill="#efecec">
+                    <font>
+                        <Font name="System Bold" size="18.0" />
+                    </font>
+                </Label>
+                <Label layoutX="454.0" layoutY="351.0" prefHeight="27.0" prefWidth="94.0" text="Rating" textFill="#eae7e7">
+                    <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="id" layoutX="581.0" layoutY="126.0" prefHeight="25.0" prefWidth="283.0" />
+                <TextField fx:id="name" layoutX="581.0" layoutY="186.0" prefHeight="25.0" prefWidth="283.0" />
+                <TextField fx:id="type" layoutX="581.0" layoutY="244.0" prefHeight="25.0" prefWidth="283.0" />
+                <TextField fx:id="year" layoutX="581.0" layoutY="297.0" prefHeight="25.0" prefWidth="283.0" />
+                <ImageView fitHeight="643.0" fitWidth="336.0" layoutY="-2.0" pickOnBounds="true">
+                    <image>
+                        <Image url="@images/02931fa2998fbd293c8470694a1449e2.jpg" />
+                    </image>
+                </ImageView>
+                <Button id="sale" layoutX="618.0" layoutY="468.0" mnemonicParsing="false" onAction="#cbutton" prefHeight="47.0" prefWidth="201.0" styleClass="login" stylesheets="@button/login.css" text="create " />
+                <TextField fx:id="rate" layoutX="581.0" layoutY="348.0" prefHeight="25.0" prefWidth="283.0" />
+                <ImageView fitHeight="74.0" fitWidth="86.0" layoutX="442.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@images/film-reel.png" />
+                    </image>
+                </ImageView>
+                <PasswordField fx:id="actor" layoutX="577.0" layoutY="397.0" prefHeight="25.0" prefWidth="283.0" />
+                <Label layoutX="455.0" layoutY="401.0" prefHeight="27.0" prefWidth="94.0" text="Actor" textFill="#e8e0e0">
+                    <font>
+                        <Font name="System Bold" size="18.0" />
+                    </font>
+                </Label>
+                <JFXButton layoutX="835.0" layoutY="562.0" mnemonicParsing="false" onAction="#back" prefHeight="67.0" prefWidth="87.0" text=".">
+                    <graphic>
+                        <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@images/back.gif.png" />
+                            </image>
+                        </ImageView>
+                    </graphic></JFXButton>
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>

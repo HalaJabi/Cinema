@@ -1,0 +1,32 @@
+.button{
+-fx-background-color :  #eba7c3;
+}
+
+.button:hover{
+-fx-background-color : #fcfafb ;
+-fx-border-color: black;
+-fx-border-radius: 0 30 30 0;
+-fx-font-style: oblique;
+}
+.jfx-button{
+-fx-background-radius: 0 30 30 0;
+
+}
+#newWedding{
+-fx-background-radius: 30 0 0 30;
+}
+#newEmployee{
+-fx-background-radius: 30 0 0 30;
+}
+#update{
+-fx-background-radius: 30 0 0 30;
+}
+#search{
+-fx-background-radius: 30 0 0 30;
+}
+#deletee{
+-fx-background-radius: 30 0 0 30;
+}
+.text-field{
+  -fx-border-color:  #96194E;
+}
